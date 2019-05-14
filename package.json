@@ -1,0 +1,41 @@
+{
+  "name": "sharedstreets-speeds",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:sharedstreets/sharedstreets-speeds.git",
+  "author": "Kevin Webb <kpwebb@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "shst-speeds": "./bin/run"
+  },
+  "files": [
+    "*"
+  ],
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "shst-speeds",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "scripts": {
+    "pretest": "tsc",
+    "prepack": "rm -rf build && tsc && oclif-dev manifest",
+    "test": "tsc && colortape build/test_core.js",
+    "bench": "tsc && node bench.js"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.5.13",
+    "@oclif/config": "^1.13.0",
+    "@oclif/plugin-help": "^2.1.6",
+    "@turf/helpers": "^6.1.4",
+    "chalk": "^2.4.2",
+    "cli-progress": "^2.1.1",
+    "sharedstreets": "^0.12.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
