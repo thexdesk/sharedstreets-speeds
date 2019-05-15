@@ -1,10 +1,13 @@
 {
   "name": "sharedstreets-speeds",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": "git@github.com:sharedstreets/sharedstreets-speeds.git",
   "author": "Kevin Webb <kpwebb@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=11.0.0"
+  },
   "bin": {
     "shst-speeds": "./bin/run"
   },
