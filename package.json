@@ -30,11 +30,11 @@
   "dependencies": {
     "@oclif/command": "^1.5.13",
     "@oclif/config": "^1.13.0",
-    "@oclif/plugin-help": "^2.1.6",
+    "@oclif/plugin-help": "^3.2.4",
     "@turf/helpers": "^6.1.4",
     "chalk": "^2.4.2",
     "cli-progress": "^2.1.1",
-    "sharedstreets": "^0.12.0"
+    "sharedstreets": "^0.15.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.0",
